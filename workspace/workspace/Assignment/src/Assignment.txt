@@ -1,0 +1,217 @@
+Core Java
+
+Day#1
+Write a program to validate email address.
+Rules to validate email
+ 1- Min 4 chars before @
+ 2- Min 3 chars between @ and .
+ 3- Min 2 chars after .
+ 4- Only one @ and . in email
+ 
+ Day#2
+ Write a class for Current account as a subclass of Account class
+ 
+ Day#3 
+ Write a Currency Converter Application
+ 
+ Day#4
+ Write an application related to library
+ 1- Every book has 3 copies in library so can be issued to only 3 members
+ 2- A member can take only one copy from library
+ 3- Book method should provide information about the member(s) who took this book
+ 4- Member method should provide information about book issued
+ 
+ Day#5
+ Write a program to provide all the information of the path C:/Users
+ 1- For each directory under this folder a new thread should be created
+ 2- Each thread should print the details of every file under the respective folder
+ 3- Use recursive method calls to get inside every sub-folder to fetch file information
+ 
+ Day#6
+ Write a program to read information from a properties file about states
+ 1- Each state has a code and popular cities inside that state
+ 2-Write a program to accept state code from user
+ 3- Use Map and collection along with Properties Java classes to solve
+ 
+ Day#7
+ Update banking application completed in class
+ 1- Throw exception from withdraw method
+ 2- Create Collection of Transaction for statement
+ 3- Create a factory pattern for opening accounts
+ 
+ Day#8
+ Write tests for Account class
+ 1- Test deposit limit and correct balance update
+ 2- Test withdraw amount and balance update
+ 3- Test BalanceException from withdraw method as expected
+ 
+PL/SQL
+Day#9
+Write an anonymous PL/SQL block with 2 cursors
+1- First cursor to fetch and print department number based on department name
+2- Second cursor to fetch name of all employees from department number
+3- open, fetch and close both the cursors within same block.
+
+Day#10
+Write a anonymous PL/SQL block to display employee name and salary from the emp table
+1- create a record for name and salary.
+2- create parameterized cursor to accept department name
+3- Declare cursor with sub-query to fetch details
+4- Manually process cursor
+5- open cursor twice in the same program with different departments. 
+
+Day#11
+Write the following subprograms in a package pkg_assign
+1- Write a procedure to accept department number as IN parameter and return total number of employees and average 
+	salary of that department.
+2- Write a function to accept employee number and calculate the tax on the annual salary of that employee based
+	on the following
+		a- Below 20000 no tax
+		b- 20001 to 30000 5% tax
+		c- 30001 to 50000 10% tax
+		d- 50000 above 15%
+	calculate and return tax amount of the employee
+
+Day#12
+Write a console application with the menu options as below
+1- Add new employee
+2- Show all Employees
+3- Update Salary form emp Id
+4- Delete Employee by ID
+* Accept option from console, show appropriate interface and accept inputs to perform database operation using JDBC.
+* Create POJO for employee and use DAO and Service layer approach to perform selected operations.
+** Note: Refer to Person example done in the class.
+
+Day#13
+Write a Hibernate application from scratch with maven configuration for Hibernate, Oracle driver and JUnit
+Considering Account class as entity. Write hibernate configuration and mapping for the same with a test 
+case.
+
+Day#14
+Refer to yesterday's assignment and add the following
+1- Create AccountService class with deposit and withdraw funtionalities
+2- Create a AccountTransaction class mapped to table
+3- Achieve OneToMany relationship among classes.
+4- Add transaction on performing deposit or withdrawal on account.
+5- Preferably use DAO class to perform hibernate operations.
+*Interfaces are must for the implementation of Service & DAO.
+
+Day#15
+Create Java project then convert it into Maven project.
+Write a class related to Person in that,
+Try to build Maven with goal "package" to package application as jar
+* On failure of theat manually export jar from project
+Using maven install jar file into repository 
+Create another project, include Person jar into that using pom
+Write a simple test class to test the working.
+
+Day#16
+Create HTML form for customer details with fields like
+Name, password, Birthdate, EmailId, phone
+Use HTML5 field validations to validate the inputs. 
+
+Day#17
+Write HTML documents wtih Embedded CSS
+1- A table with 2 columns with min 5 records, using CSS set the border, alignment
+and alternate background colours for rows.
+2- A login form, use CSS to change the appearance of the  the login form
+elements with black theme. Login button should be round-cornered
+3- Create a list of fruits and make them appear as boxes one line with alternate background colours and borders.
+4- Create an image gallery apply different borders for each image, min 5 images.
+
+Day#18
+1- Create HTML form for personal details with fields like
+Name, password, Birthdate, EmailId, phone
+2- Validate the form using javascript not HTML5 validations.
+3- Calculate the age of the person and display the output in new document with all the inputs
+4- Display the output in new document with all the inputs.
+
+Day#19
+1- Write a web page with jQuery to fade in/out image on hover effect.
+2- Write an example to toggle image hide and show effect on click of a link.
+3- Write an example to remove elements of any type from page on click event.
+4- Write an example to call define a function as parameter and show alert message on body load.
+
+Day#20
+1- Write an XML document of person with name, age, city elements and write DTD, XSD and XSL for the same.
+2- Write either DOM or SAX parser to parse the same XML document.
+
+Day#22
+For in-class case study
+1- Create beans for Login, User registration and Product.
+2- Design JSP pages for Login and User registration
+3- Create tables for User and Product.
+4- Insert 10 records into products table.
+
+Day#23
+1-Create a Servlet to act as a controller for Login and Registration
+2- Create service and dao layers to deal with Database using JDBC
+3- Registration form data should be saved as record in database.
+4- Login should be validated with record in database.
+
+Day#24
+Write input, process and output JSPs for Personal information
+Use JSP action commands to instantiate respective bean in a specific scope.
+Set properties and redirect control to output page to display on screen.
+Use SQL tag library to save record in database with server configured.
+
+
+Day#25
+Configure connection Pool in tomcat server for Oracle database 
+Use it in the calss case-study project.
+Take the help of Tomcat documentation(if required)
+Configure Resource reference in deployment descriptor.
+
+Day#26
+Write a Custom Tag in JSP to print Hello message on a JSP page.
+Create handler class.
+Create TLD configuration file.
+Create JSP and test working
+
+Day#27
+ 
+Day#28 
+ Write a Currency Converter Application in Spring and test in JVM
+
+Day#19
+Write an apllication inSpring using JDBC template
+Implement fetching all the records from Flights_test table
+Implement deleting a flight from the same.
+Use maven for dependencies.
+
+Day#30
+Write an application in Spring for Hibernate or JPA intgration
+Configure persistence carefully and correctly
+Configure transaction in anotation style
+Configure Spring datasource with persistence provider
+Use maven for dependencies.
+
+Day#31
+Write an application in Spring usin MVC
+add dependencies for itext library
+Fetch flight data using JDBC template 
+Print records HTML  as well PDF style
+Use maven for dependencies
+
+Day#32
+No assignment because of setup issues with Angular JS and Typescript
+Half day spent in identifying Mphasis local proxies to download packages.
+Completed introduction to topics not much hands on done.
+
+Day#33
+Create an Angular 2 application using CLI
+Create an interface for Movie with title and rating fields of respective types
+Initialise an array of Movie object with few records.
+Using One-way binding display movie list in a tabular format template page.
+
+Day#34
+Create an Angular 2 application using CLI
+Create a component for form with required dependencies 
+Create a form with text files, Radio and checkboxes using Reactive style
+Validate the form with valuator dependency.
+
+Day#35
+https://oliverveits.wordpress.com/2017/06/24/consuming-a-restful-web-service-with-angular-4/
+
+
+

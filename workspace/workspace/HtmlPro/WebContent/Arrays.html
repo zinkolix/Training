@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script type="text/javascript">
+	var ar = new Array(1001,"Hello","20/5/2015",400002);
+	for (var i = 0; i < ar.length; i++) {
+		document.write("<h2>" + ar[i]);
+		
+	}
+	
+	var week = ["sun", "mon", "tue", "thu", "fri", "sat"];
+	week.forEach(function(day) {
+		document.write("<h3>" + day);
+	
+	});
+	
+	for ( var dow in week) {
+		document.write("<h4>" + week[dow]);
+		
+	}
+	
+	for ( var c of ar) {
+		document.write("<h2>" + c);
+		
+	}
+</script>
+</head>
+<body>
+
+</body>
+</html>

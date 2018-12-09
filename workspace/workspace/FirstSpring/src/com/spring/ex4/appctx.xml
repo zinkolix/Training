@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd">
+
+	<bean id="serviceLocator" class="com.spring.ex4.MyServiceLocator" />
+	
+	<bean id ="myService" factory-bean="serviceLocator" scope="prototype" factory-method="createMyService" />
+
+</beans>

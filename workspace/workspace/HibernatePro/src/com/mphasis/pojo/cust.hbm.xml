@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!--  Maps to the configure file -->
+<hibernate-mapping>
+<!--  Multiple classes can be written in the same hbm file. -->
+	<class name="com.mphasis.pojo.Customer" table = "customers">
+
+	<!--  Primary Key: generator can have : Assign, Increment, Sequence, Native classes -->
+		<id name="custId" column="cust_id">
+			<generator class="increment" />
+		</id>
+	<!--  property name should be same as the attributes of the class. -->		
+		<property name="custName" column="cust_name" length="30"/>
+		<property name="credit" />
+	
+	</class>
+</hibernate-mapping>
+

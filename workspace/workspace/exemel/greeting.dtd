@@ -1,0 +1,3 @@
+<!ELEMENT greeting ((person,message)|(message,person))>
+<!ELEMENT person (#PCDATA)>
+<!ELEMENT message (#PCDATA)>

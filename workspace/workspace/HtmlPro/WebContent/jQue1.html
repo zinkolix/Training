@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script type="text/javascript" src="jquery.js"></script>
+
+<script type="text/javascript">
+	jQuery(document).ready(function() {
+		alert("document is ready");
+		alert(jQuery === $);
+		var kk = $.noConflict();
+		alert(jQuery === $);
+		$ = kk.noConflict();
+		alert(jQuery === $);
+	});
+</script>
+</head>
+<body>
+</body>
+</html>

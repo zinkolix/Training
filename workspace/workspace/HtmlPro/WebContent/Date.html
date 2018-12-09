@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script type="text/javascript">
+	dt = new Date();
+	dow = new Array("sun", "mon", "tue");
+	mnths = new Array("jan", "feb");
+
+	document.write(dt.getDay() + "<br>");
+	document.write(dow[dt.getDay()] + "<br>");
+	document.write(dt.getDate() + "<br>");
+	document.write(dt.getMonth() + "<br>");
+	document.write(mnths[dt.getMonth()] + "<br>")
+	
+	function timer(){
+		dt = new Date();
+		time = dt.getHours() + ":" + dt.getMinutes() + ":" + dt.getSeconds();
+		
+		document.getElementById("digi").value = time;
+		window.status = time;
+	
+	}
+	setInterval("timer()", 1000);
+</script>
+</head>
+<body onload="timer()">
+<input id = "digi" style="font: 24pt verdana; border: none">
+</body>
+</html>

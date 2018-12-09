@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src = "jquery.js"></script>
+<script type="text/javascript">
+	$(document).ready(function () {
+		$("#show").click(function () {
+			$(".mydiv").show(5000);
+		});
+		$("#hide").click(function () {
+			$(".mydiv").hide(5000);
+		});
+	});
+</script>
+<style type="text/css">
+	.mydiv{margin: 10px;padding: 12px; border: 2px solid #666;width: 100px;
+			height: 100px;background-color: yellow; }
+</style>
+</head>
+<body>
+<div class = "mydiv">This is a square</div>
+<input id = "hide" type = "button" value="Hide"/>
+<input id = "show" type = "button" value="Show"/>
+
+</body>
+</html>

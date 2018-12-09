@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src = "jquery.js"></script>
+
+<style type="text/css">
+	li{ display: inline; height: 30px;float: left;margin: 5px;padding: 5px;background: cyan;}
+	.selected {color : red; }
+</style>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("li").filter(".middle:first").addClass("selected");//filter to filter the elements,addClass add the css to the html elements
+		$("li:first").addClass("selected"); //	pseudo-classes
+	
+	});															
+	
+</script>
+</head>
+<body>
+<ul>
+	<li class = "top"> list item 1 </li>
+	<li class = "top"> list item 2 </li>
+	<li class = "middle"> list item 3 </li>
+	<li class = "middle"> list item 4 </li>
+	<li class=" bottom" > list item 5 </li>
+	<li class = "bottom"> list item 6 </li>
+</ul>
+
+</body>
+</html>

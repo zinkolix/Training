@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<form name="Formelements" action="hello.html">
+		<table>
+			<tr>
+				<td><label for="demo"> Placeholder : </label></td>
+				<td><input id="demo" name="demo"
+					placeholder="Enter numbers only" /></td>
+			</tr>
+			<tr>
+				<td><label for="nameauto">Auto focus : </label></td>
+				<td><input id="nameauto" name="nameauto" type="text" autofocus />
+			</tr>
+
+			<tr>
+				<td><label for="range">Range : </label></td>
+				<td><input id="range" name="range" type="range" min="0"
+					max="50" value="10" /></td>
+			</tr>
+
+			<tr>
+				<td><label for="search">Search : </label></td>
+				<td><input id="search" name="search" type="search"
+					placeholder="Search..." /></td>
+			</tr>
+
+			<tr>
+				<td><label for="date">Date : </label></td>
+				<td><input id="date" name="date" type="date" min="2010-08-14"
+					max="2014-08-14" /></td>
+			</tr>
+
+			<tr>
+				<td><label for="date">Month : </label></td>
+				<td><input id="date" name="date" type="month" /></td>
+			</tr>
+
+			<tr>
+				<td><label for="date">Week : </label></td>
+				<td><input id="date" name="date" type="week" value="" /></td>
+			</tr>
+			<tr>
+				<td><label for="date">Time : </label></td>
+				<td><input id="date" name="date" type="time" /></td>
+			</tr>
+			<tr>
+				<td><label for="required">Required : </label></td>
+				<td><input id="required" name="required" type="text" required /></td>
+			</tr>
+			<tr>
+				<td><label for="email">Email : </label></td>
+				<td><input id="email" name="email" type="email" required /></td>
+			</tr>
+			<tr>
+				<td><label for="color">Color : </label></td>
+				<td><input id="color" name="color" type="color"
+					placeholder="e.g #bbbbbb" /></td>
+			</tr>
+			
+			<tr>
+				<td><label for="country_name">Country : </label></td>
+				<td><input id="country_name" name="country_name" type="text"
+					list ="country" /></td>
+				<td><datalist>
+					<option value = "Afghanistan">
+					<option value = "Albania">
+					<option value = "Algeria">
+					<option value = "Andorra">
+					<option value = "Car">
+					<option value = "Cat">
+					<option value = "City">
+				</datalist></td>
+			</tr>
+
+		</table>
+	</form>
+</body>
+</html>

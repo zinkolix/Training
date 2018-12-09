@@ -1,0 +1,6 @@
+<!ELEMENT person (name, age, city,(citizen|alien))>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT age (#PCDATA)>
+<!ELEMENT city (#PCDATA)>
+<!ELEMENT citizen (#PCDATA)>
+<!ELEMENT alien EMPTY>

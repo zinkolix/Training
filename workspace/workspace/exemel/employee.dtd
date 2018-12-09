@@ -1,0 +1,7 @@
+<!ELEMENT organization (employee+) >
+<!ELEMENT employee (name,salary)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT salary (#PCDATA)>
+
+<!ATTLIST employee id ID #REQUIRED>
+<!ATTLIST employee dept (10|20|30) "10">

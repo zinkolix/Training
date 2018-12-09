@@ -1,0 +1,12 @@
+form {
+	background-color: black;
+	color: white;
+}
+
+input[type =  button] {
+	background-color: white;
+	border-radius: 30%
+}
+body {
+	background-color: silver;
+}

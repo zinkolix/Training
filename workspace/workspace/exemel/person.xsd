@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" >
+	<xs:complexType name="personType">
+		<xs:sequence>
+				<xs:element name = "name" type = "xs:string"/>
+				<xs:element name = "age" type = "xs:int" />
+				<xs:element name = "city" type = "xs:string" />
+			<xs:choice>
+				<xs:element name = "citizen" />
+				<xs:element name = "alien" />		
+			</xs:choice>
+		</xs:sequence>	
+	</xs:complexType>
+	
+	<xs:element name="person" type = "personType" />
+</xs:schema>

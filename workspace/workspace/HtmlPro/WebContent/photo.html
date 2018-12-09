@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script type="text/javascript">
+images = new Array("Koala.jpg","Tulips.jpg","Jellyfish.jpg","Desert.jpg");
+colors = new Array("blue","Red","Green");
+idx = 0;
+cdx = 0;
+function changeImage() {
+	if(idx == images.length)
+		idx = 0;
+	myimg.src = images[idx];
+	idx++;
+	
+}
+setInterval("changeImage()", 1000);
+function changeColor(){
+	if(cdx == colors.length)
+		cdx = 0;
+	myhi.style.color = colors[cdx ++];
+	setTimeout("changeColor()", 500);
+}
+</script>
+</head>
+<body onload = "changeColor()">
+<h1 align= "center" id = "myhi">Images Demo</h1><hr>
+<img id = "myimg" src="Desert.jpg" height = "200" width = "300"
+onmouseover="src = 'Hydrangeas.jpg'" onclick="src = 'Lighthouse.jpg'" onmouseout="src = 'Penguins.jpg'">
+</body>
+</html>

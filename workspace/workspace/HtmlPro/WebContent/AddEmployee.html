@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Add New Employee</title>
+</head>
+<body>
+	<h2>Add New Employee</h2>
+	<hr size=3 color="cyan">
+	<br>
+
+	<div align="Right">
+		<form>
+			<div align="Right" style="width: 300px">
+				<fieldset style="border-color: red">
+					<legend> Employee Details </legend>
+					<div align="left">
+						Employee Name: <br>
+						<input type="text" name="emp_name" placeholder="Employee Name" pattern="{A-Za-z}{6,}" required><br>
+						<br> Password: <br> <input type="password"
+							name="password" placeholder="Password"><br>
+						<br> Pan: <br>
+						<input type="text" name="pan" placeholder="Pan"><br>
+						<br> Department:<br> <select name="emp_type">
+							<option value="deposit">Deposit Account </option>
+							<option value="loan"> Loan Account </option>
+						</select><br>
+						<br> <input type="button" value="Add">
+					</div>
+				</fieldset>
+			</div>
+		</form>
+	</div>
+</body>
+</html>

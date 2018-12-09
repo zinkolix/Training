@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.0.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.0.xsd">
+
+	<bean id="acnt" class="bean.Account" />
+	<bean id="logAspect" class="bean.AccountLogger" />
+
+	<aop:config>
+		<aop:pointcut expression="execution( * deposit(..))" id="pointcut1" />
+		<aop:aspect ref="logAspect">
+			<aop:before method="logBefore" pointcut-ref="pointcut1" />
+		</aop:aspect>
+	</aop:config>
+	<aop:config>
+		<aop:pointcut expression="execution(public * summary())"
+			id="pointcut2" />
+		<aop:aspect ref="logAspect">
+			<aop:after method="logAfter" pointcut-ref="pointcut2" />
+		</aop:aspect>
+	</aop:config>
+
+	<aop:config>
+		<aop:pointcut expression="execution(public * get*(..))"
+			id="pointcut3" />
+		<aop:aspect ref="logAspect">
+			<aop:after-returning returning="retVal"
+				method="logAfterReturning" pointcut-ref="pointcut3" />
+		</aop:aspect>
+	</aop:config>
+
+	<aop:config>
+		<aop:pointcut expression="execution(* withdraw(..))" id="pointcut4" />
+		<aop:aspect ref="logAspect">
+			<aop:after-throwing throwing="ex" method="logAfterThrowing"
+				pointcut-ref="pointcut4" />
+		</aop:aspect>
+	</aop:config>
+
+	<aop:config>
+		<aop:aspect ref="logAspect">
+			<aop:around method="logAround" pointcut="execution(* *Transfer(..))" />
+		</aop:aspect>
+	</aop:config>
+
+</beans>

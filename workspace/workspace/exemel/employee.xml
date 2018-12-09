@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type = "text/xsl" href="employee2.xsl"?>
+<organization>
+	<employee id="MLA12345" dept = "10">
+		<name>Sean Penn</name>
+		<salary>1800</salary>
+	</employee>
+	<employee id="MLA23456" dept = "20">
+		<name> Jack N Jill</name>
+		<salary>1300</salary>
+	</employee>
+	<employee id="MLA34567" dept = "30">
+		<name>Rob Random</name>
+		<salary>900</salary>
+	</employee>
+</organization>

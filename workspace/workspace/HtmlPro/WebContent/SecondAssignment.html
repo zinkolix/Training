@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Second Assignment</title>
+<link rel = "stylesheet" type = "text/css" href = "New.css">
+<script type="text/javascript">
+function check(name, password){
+	var user = document.getElementById("name").value;
+	var pass = document.getElementById("password").value;
+	if( user == "anshu" && pass == "java")
+		alert("Login successful");
+	else
+		alert("Login Unsuccessful");
+}
+
+</script>
+</head>
+<body>
+<h2>Login Form</h2>
+	<hr size=2 color="chocolate">
+	<br>
+	<div align="Right">
+		<form >
+			<fieldset>
+			<legend> Login Details</legend>
+			<table>
+		
+			
+			<tr>
+						<td>
+				User Id:
+			</td>
+						<td><input name="name" id = "name" pattern="[A-Za-z]{6,}" required></td>
+					</tr>
+					<tr>
+						<td>Password</td>
+						<td><input type="password" name="passwd" id = "password"
+							pattern="[A-Za-z0-9]{8,}" required /></td>
+					</tr>
+		
+			<tr>
+						<td><input type="button" value="submit form" onclick = "check(name.value,passwd.value)"></td>
+						
+
+					</tr>
+			
+			</table>
+					
+			
+			</fieldset>
+		</form>
+	</div>
+
+
+</body>
+</html>

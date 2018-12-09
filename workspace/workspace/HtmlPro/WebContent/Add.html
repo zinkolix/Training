@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script type="text/javascript">
+function sum(num1, num2){
+	if(!isNaN(num1) && !isNaN(num2)){
+		c = parseInt(num1) + parseInt(num2);
+		document.getElementById("ans").value= c;
+	}else
+		alert("Invalid Number Provided!!!")
+	
+}
+function subNumbers(num1, num2){
+	 c = parseInt(num1) - parseInt(num2);
+	document.getElementById("ans").value= c;
+}
+</script>
+</head>
+<body>
+First Number:
+<input id = "num1"><br>
+Second Number:
+<input id = "num2"><br>
+<input type = "button" value = "Additon" onClick = "sum(num1.value,num2.value)">
+<input type = "button" value = "subtraction" onClick ="subNumbers(num1.value,num2.value)"><br>
+<input type = "text"  id = "ans" placeholder = "Result" onFocus = "this.value" readonly style="border: none">
+
+</body>
+</html>

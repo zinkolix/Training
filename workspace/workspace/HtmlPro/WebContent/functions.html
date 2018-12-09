@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script type="text/javascript">
+function firstFun(str){
+	alert(str);	
+}
+function secondFun(obj){
+	str = obj.value;
+	alert(str);
+}
+
+function thirdFun() {
+	str = document.getElementById("third");
+	alert(str.value);
+}
+function forthFun() {
+	var str = function() {
+		return document.getElementById("forth");
+	}();
+	alert(str.value);
+}
+</script>
+</head>
+<body>
+<input id = "first" ><input type = "button" value = "demo" onClick = "firstFun(first.value)"><br>
+<input id = "second"><input type="button" value="demo" onClick = "secondFun(second)"><br>
+<input id = "third" ><input type="button" value = "demo" onClick="thirdFun()"> <br>
+<input id = "forth"> <input type = "button" value = "Nested" onClick = "forthFun()"><br>
+
+
+</body>
+</html>

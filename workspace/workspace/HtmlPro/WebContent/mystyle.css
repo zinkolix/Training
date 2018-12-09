@@ -1,0 +1,111 @@
+@CHARSET "ISO-8859-1";
+
+h1 {
+	background: pink;
+	color: purple;
+}
+
+p.orange {
+	font: 15pt georgia;
+	font-weight: bold;
+	color: orange;
+}
+
+img {
+	border: 5pt ridge;
+	border-color: yellow;
+}
+
+p.brown {
+	font: 20pt garamond;
+	font-style: italic;
+	color: brown;
+}
+
+a {
+	text-decoration: none;
+	background: cyan;
+}
+
+a:HOVER {
+	background: yellow;
+	color: red;
+}
+
+pre {
+	font: 18pt consolas;
+	color: beige;
+	background: black;
+	border: 5pt solid green;
+}
+
+li {
+	display: inline;
+	border: 2pt ridge purple;
+	font-size: 16pt;
+	padding: 7pt;
+	box-shadow: 5px 10px;
+}
+
+li:NTH-CHILD(even) {
+	background: lightgreen;
+}
+
+li:NTH-CHILD(odd) {
+	background: yellow;
+}
+
+form {
+	background: black;
+	border: 1px solid black;
+	color: white;
+}
+
+input {
+	background: black;
+	border: none;
+	border-bottom: 1pt solid white;
+}
+
+input[type="button"] {
+background: black;
+border: 2pt outset white;	
+}
+
+table,tr,td {
+	border: 2pt ridgle green;
+	padding: 5pt;
+}
+tr:NTH-CHILD(even) {
+	color:silver;
+	background: aqua;	
+}
+
+tr:NTH-CHILD(odd) {
+	color:lime;
+	background: red;	
+}
+iframes[src = "Desert.jpg"] {
+	position: absolute;
+	height: 50%;
+}
+img.one {
+	height: auto;
+	border:3pt solid;
+}
+img.two {
+	height: auto;
+	border:3pt groove;
+}
+img.three {
+	height: auto;
+	border:3pt double;
+}
+img.four {
+	height: auto;
+	border:3pt inset;
+}
+img.five {
+	height: auto;
+	border:3pt dashed;
+}

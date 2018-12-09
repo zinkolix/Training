@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body onLoad = "alert('Loading completed...')">
+Enter Name: 
+<input id = "name">
+<input type="button" value = "Say hello" onclick="document.write('Hello' + document.getElementById('name').value)">
+<br>
+<input id = "greet" onblur="alert(this.value)">
+<input type="text" value = "Focus on Me" onFocus="this.value ='Focusing' ">
+</body>
+</html>

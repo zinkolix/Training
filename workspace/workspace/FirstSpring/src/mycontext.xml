@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	
+	<bean id = "str" class="java.lang.String">
+		<constructor-arg value="Hello Spring" />
+	</bean>
+	<bean id="hello" class="com.spring.HelloWorld">
+	<!-- Passsing value to the setter method for greeting: Setter injection -->
+	<!--	<property name="greeting" value="Hello Spring"/>   -->
+	<constructor-arg ref = "str" />
+	</bean>
+
+</beans>

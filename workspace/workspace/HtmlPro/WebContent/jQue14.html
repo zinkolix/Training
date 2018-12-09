@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src = jquery.js></script>
+<script type="text/javascript">
+$(document).ready(function () {
+	$("#fade img").fadeTo(0, 0.3);
+	
+	$("#fade img").hover(function () {
+		$(this).fadeTo("slow",1.0);
+	},
+	function () {
+		$(this).fadeTo("slow",0.3);
+	});
+	
+});</script>
+</head>
+<body>
+<div id= "fade">
+	<img src = "Desert.jpg" width="150px" height="150px"/>
+	<img  src="Koala.jpg" width="150px"height="150px"/>
+	<img  src="Penguins.jpg" width="150px"height="150px"/>
+</div>
+
+</body>
+</html>
